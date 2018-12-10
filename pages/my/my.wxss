@@ -1,0 +1,52 @@
+/* pages/my/my.wxss */
+page {
+  color: #aaa;
+  font-size: 32rpx;
+  background: #f2f2f2;
+}
+.userInfo-container {
+  width: 100%;
+  padding: 40rpx 0;
+  text-align: center;
+  background: #fc5a41;
+  border-radius: 0;
+}
+.userInfo-container text{
+  color: #aaa;
+  font-size: 36rpx;
+}
+.userInfo-avatar{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.my-list {
+  position: relative;
+  height: 68rpx;
+  margin-bottom: 20rpx;
+  padding-left: 20rpx;
+  line-height: 68rpx;
+  background: #fff;
+}
+.arrow-container{
+  position: absolute;
+  top: 20rpx;
+  right: 6%;
+}
+.right-arrow {
+  width:0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left:0;
+  top:0;
+  border-top:6px transparent dashed;
+  border-right: 6px transparent dashed;
+  border-bottom: 6px transparent dashed;
+  border-left: 6px white solid;
+  overflow: hidden;
+}
+.arrow {
+  left: 2px;
+  border-left: 6px #aaa solid;
+}

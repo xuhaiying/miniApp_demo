@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image bindtap="towebPage" data-target="{{item.url}}" src="{{item.photoUrl}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="title">最新视频</view>
+<view class="recommendList">
+  <view class="item" wx:for="{{recommedAndPost}}" wx:key="{{index}}" bindtap="towebPage2" data-target="{{item.recommendUrl}}">
+    <image src="{{item.coursePhotoUrl}}" mode="widthFix"></image>
+    <text>{{item.shortTitle}}</text>
+  </view>
+</view>

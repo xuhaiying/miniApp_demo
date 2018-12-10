@@ -1,0 +1,38 @@
+<!--pages/my/my.wxml-->
+<block wx:if="{{userInfo}}">
+<button class="userInfo-container" open-type="getUserInfo"  bindgetuserinfo="onGotUserInfo">
+  <image class="userInfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+  <view>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+</button>
+</block>
+<block wx:else>
+<button class="userInfo-container" open-type="getUserInfo"  bindgetuserinfo="onGotUserInfo">
+  <image class="userInfo-avatar" src="/images/people.png"></image>
+  <view>
+    <text>授权登录</text>
+  </view>
+</button>
+</block>
+<view class="my-list">
+  <view>购物车</view>
+  <view class="arrow-container">
+    <view class="right-arrow arrow"></view>
+    <view class="right-arrow"></view>
+  </view>
+</view>
+<view class="my-list" bindtap="phoneCall">
+  <view>联系客服</view>
+  <view class="arrow-container">
+    <view class="right-arrow arrow"></view>
+    <view class="right-arrow"></view>
+  </view>
+</view>
+<view class="my-list">
+  <view>关于我们</view>
+  <view class="arrow-container">
+    <view class="right-arrow arrow"></view>
+    <view class="right-arrow"></view>
+  </view>
+</view>

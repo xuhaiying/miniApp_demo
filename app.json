@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/my/my",
+    "pages/index/index",
+    
+    "pages/webview/webview"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "珠峰小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor": "#e94840",
+    "list": [{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath": "images/home2.png",
+      "selectedIconPath": "images/home.png"
+    },{
+      "pagePath":"pages/my/my",
+      "text":"我的",
+      "iconPath":"images/my2.png",
+      "selectedIconPath":"images/my.png"
+    }]
+  }
+}

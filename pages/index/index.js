@@ -39,6 +39,7 @@ Page({
             if (l.moduleType === "picture"){
               data.imgUrls = l.moduleMap.map.pictureDTOList.list;
             } else if (l.moduleType === "recommend"){
+              data.recommedTitle = "最新视频";
               data.recommedAndPost = l.moduleMap.map.recommedAndPost.list[0].list;
             }
           })

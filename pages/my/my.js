@@ -7,7 +7,8 @@ Page({
    */
   data: {
     userInfo: null,
-    hasUserInfo: false
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   phoneCall: function (){
     wx.makePhoneCall({

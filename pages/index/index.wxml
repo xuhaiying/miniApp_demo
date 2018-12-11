@@ -7,7 +7,7 @@
     </swiper-item>
   </block>
 </swiper>
-<view class="title">最新视频</view>
+<view wx:if="{{recommedTitle}}" class="title">{{recommedTitle}}</view>
 <view class="recommendList">
   <view class="item" wx:for="{{recommedAndPost}}" wx:key="{{index}}" bindtap="towebPage2" data-target="{{item.recommendUrl}}">
     <image src="{{item.coursePhotoUrl}}" mode="widthFix"></image>
